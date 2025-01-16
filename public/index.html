@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor Numérico</title>
+    <link rel="stylesheet" href="/src/index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Convertidor Numérico</h1>
+
+        <div class="convert-container">
+            <div class="numeric-converter">
+                <h2>Convertidor Numérico</h2>
+                <input type="number" id="numericInput" placeholder="Ingrese un número">
+                <div class="button-group">
+                    <button class="convert-btn" onclick="convertNumber('binario')">Binario</button>
+                    <button class="convert-btn" onclick="convertNumber('hexadecimal')">Hexadecimal</button>
+                    <button class="convert-btn" onclick="convertNumber('decimal')">Decimal</button>
+                    <button class="convert-btn" onclick="convertNumber('octal')">Octal</button>
+                </div>
+                <div id="numericResult" class="result"></div>
+            </div>
+
+            <div class="ascii-converter">
+                <h2>Convertidor ASCII</h2>
+                <input type="text" id="asciiInput" placeholder="Ingrese texto">
+                <div class="button-group">
+                    <button id="convertAsciiBtn">Convertir</button>
+                </div>
+                <div id="asciiResult" class="result"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/src/App.js"></script>
+</body>
+</html>
